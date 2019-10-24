@@ -1,15 +1,25 @@
-#FRIEND LIST
+## FRIENDS LIST
 A simple express app
 
-###FUNCTIONALITY
+## FUNCTIONALITY
 By clicking "Plus" sign, a drop-down text-input will appear.
 All data will save into mongo databse. 
 Instantly it will read data from DB & will print on the screen.
 
-###OUTLOOK
+## OUTLOOK
 ![](screenshot/friend_list.png)
 
-###HOW TO RUN LOCALLY
+## DATABSE
+MongoDb
+
+## DATABSE
+expressjs, 
+ejs,
+mongoose,
+body-parser,
+method-override
+
+## HOW TO RUN LOCALLY
 1. Clone files
 2. Install dependencies
 > npm-install
