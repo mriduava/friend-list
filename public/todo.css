@@ -1,0 +1,122 @@
+body{
+	background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#listBody{
+	width: 364px;
+	margin: 40px auto;
+	padding: 0px;
+	background: #fff;
+	border: 1px solid #AED6F1;
+	border-top-right-radius: 50px;
+	box-shadow: 13px 13px 13px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+	margin: 0;
+	padding: 5px 39px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #fff;
+	background: steelblue;
+	border-top-right-radius: 50px;
+}
+
+h2{
+	margin-bottom: 18px;
+	text-transform: capitalize;
+}
+
+#container{
+	width: 360px;
+	margin: 2px auto;
+	font-family: 'Philosopher', sans-serif;
+}
+
+input{
+	width: 100%;
+	height: 36px;
+	font-size: 18px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 13px 13px 13px 39px;
+	color: steelblue;
+	background: #ecf7ff;
+	border: 0.2px solid #fff;
+	display: none;
+	outline: none;
+}
+
+ul{
+	margin-left: 0;
+}
+
+li{
+	padding-left: 0;
+	background: #fff;
+	color: steelblue;
+	line-height: 30px;
+	list-style-type: none;
+}
+
+li:nth-child(2n){
+	background: #ecf7ff;
+}
+
+li:hover{
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+.fa-plus-circle{
+	font-size: 40px;
+	float: right;
+	margin-top: 6px;
+}
+
+.land{
+	text-transform: capitalize;
+}
+
+
+.btn{
+	color:#fff;
+	float: right;
+	background: #fff;
+	border: none;
+	margin-right: 41px;
+	margin-top: 0;
+	display: inline-block;
+}
+
+.btn:hover{
+	color: red;
+	border: 0.6px solid red;
+	border-radius: 10px;
+}
+
+.button{
+	padding: 0;
+	color: #fff;
+	background: steelblue;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	border-radius: 4px;
+}
+.button:hover{
+	border: 1px solid steelblue;
+	color: steelblue;
+	background: #fff;
+}
+
+
+input::placeholder {
+  color: #aed6f1;
+  font-size: 1.0em;
+  font-style: italic;
+}

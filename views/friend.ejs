@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mriduava</title>
+	<link rel="stylesheet" type="text/css" href="/todo.css">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+  <script
+     src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+  </script>
+
+</head>
+<body>
+
+<div id="listBody">
+	<% userInfo.reverse() %>
+  <div id="container">
+		<h1>Friends List <span class="plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h1>
+    <form class="info" action="/friend" method="POST">
+		<input style="text-transform: capitalize" name="name" type="text" placeholder="name" required>
+		<input style="text-transform: capitalize" name="country" type="text" placeholder="country" required>
+		<input name="email" type="text" placeholder="email" required>
+		<input class="button" type= "Submit">
+	</form>
+		<% userInfo.forEach(function(info){ %>
+     <ul>
+		<h2><%= info.name %>
+			<form id="delete" action="/friend/<%= info._id %>?_method=DELETE" method="POST">
+		<button class="btn"> X </button>
+	</form>
+		</h2>
+		<li class="land">Country: <%= info.country %></li>
+		<li>Email  : <%= info.email %></li>
+	</ul>
+	     <%  }); %>
+  </div>
+</div>
+
+<script>
+// This function will On or Off the input
+$(".plus").click(function(){
+	$("input").fadeToggle();
+});
+
+// To delete a list or 'li' by clicking on it
+$("ul").on("click", "span", function(e){
+	$(this).parent().fadeOut(1000, function(){
+		$(this).remove();
+	});
+		e.stopPropagation();
+});
+</script>
+
+</body>
+</html>
